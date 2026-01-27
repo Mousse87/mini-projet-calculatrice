@@ -1,0 +1,82 @@
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.calculator {
+    background-color: #262626;
+    padding: 25px;
+    border-radius: 30px;
+    width: 300px;
+}
+
+.display {
+    text-align: right;
+    color: white;
+    padding: 20px 10px;
+    height: 80px;
+}
+
+#exp { color: #888; font-size: 18px; height: 20px; }
+#res { font-size: 40px; margin-top: 5px; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    border: none;
+    height: 60px;
+    border-radius: 15px; /* Forme légèrement arrondie comme l'image */
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Couleurs fidèles à ton image */
+.btn-dark { background-color: #333333; color: white; }
+.btn-blue { background-color: #5da9e9; color: white; } /* Le bleu de l'image */
+.btn-cyan { background-color: #a2d2ff; color: #333; }
+.btn-white { background-color: #ffffff; color: #333; }
+
+.btn:active { opacity: 0.7; }
+
+/* Style de l'Historique à côté */
+.history-box {
+    background-color: #262626;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 180px;
+    min-height: 200px;
+}
+
+.history-box h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #f2f6fad8;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.history-item {
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.hist-exp { color: #aaa; }
+.hist-res { color: white; font-weight: bold; font-size: 16px; }
